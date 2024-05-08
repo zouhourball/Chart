@@ -5,6 +5,7 @@ import Table from "./components/Table";
 import Container from "./components/Container";
 
 import { fetchData } from "./utils/api";
+import data from "./utils/static-data.json"
 
 import "./App.scss";
 import Error from "./components/Error";
@@ -16,7 +17,8 @@ const App: React.FC = () => {
   useEffect(() => {
     (async () => {
       try {
-        const result = await fetchData();
+        const result = await data?.stocks// fetchData();
+        
         if (result) {
           setStocks(result);
         }
