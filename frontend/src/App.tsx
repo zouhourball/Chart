@@ -4,7 +4,7 @@ import Chart from "./components/Chart";
 import Table from "./components/Table";
 import Container from "./components/Container";
 
-import { fetchData } from "./utils/api";
+//import { fetchData } from "./utils/api";
 import data from "./utils/static-data.json"
 
 import "./App.scss";
